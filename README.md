@@ -1,6 +1,8 @@
 # This website is the work of the weSTEM website development team.
 
 ##
+Before you begin, install node through terminal. You only have to do this once, so if you already have node/npm on your computer, you don't need to complete this step. 
+
 To install and begin building pull the files to update your local copy,
 In the terminal and within the directory that holds all of the files for this
 website, type "npm install", once everything is installed type "npm start app.js"
