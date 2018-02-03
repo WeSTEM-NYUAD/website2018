@@ -1,0 +1,23 @@
+{
+  "name": "westem-website",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "^8.9.1"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "nodemon": "^1.12.5",
+    "request": "^2.47.0",
+    "semantic-ui": "^2.2.14",
+    "serve-favicon": "^2.2.0",
+    "socket.io": "^1.2.1",
+    "typed.js": "^2.0.6",
+    "underscore": "^1.8.3"
+  }
+}
