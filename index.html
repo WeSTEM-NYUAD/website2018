@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+em<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -126,27 +126,28 @@
         <div class="ui attached message">
           <center><p>Want to collaborate? Questions? Ideas? Write to us.</p></center>
         </div>
-        <form class="ui form attached fluid segment">
+        <form class="ui form attached fluid segment"
+        action="form-to-email.php" method="post">
         <div class="two fields">
           <div class="field">
             <label>First Name</label>
-            <input placeholder="First Name" type="text">
+            <input placeholder="First Name" type="text" name="firstname">
           </div>
           <div class="field">
             <label>Last Name</label>
-            <input placeholder="Last Name" type="text">
+            <input placeholder="Last Name" type="text" name="lastname">
           </div>
         </div>
         <div class="field">
           <label>Email</label>
-          <input placeholder="myname@gmail.com" type="text">
+          <input placeholder="myname@gmail.com" type="text" name="email">
         </div>
         <div class="field">
           <label>Message</label>
-          <textarea placeholder = "Your Message Here" type="textarea" rows = "3">
+          <textarea placeholder="Your Message Here" type="textarea" rows="3" name="message">
           </textarea>
         </div>
-        <div class="ui blue submit button">Submit</div>
+        <div class="ui blue submit button" value="Send Form">Submit</div>
       </form>
     </div>
     </div>
