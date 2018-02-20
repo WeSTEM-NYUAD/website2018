@@ -4,12 +4,28 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  }
 
 footer.center.aligned p {
   text-align: center; }
 footer p {
   color: rgba(255, 255, 255, 0.5); }
+.body-text {
+  font-family: 'Lato', 'Helvetica', sans-serif;
+  padding-bottom:5%;
+  padding-top:5%;
+  font-size:1.6vw;
+
+}
+.action-icon {
+  max-width:70px;
+  height:auto;
+  padding-bottom:3%;
+}
+h3 {
+  font-size:2vw;
+}
 
 ul,
 ol {

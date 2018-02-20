@@ -8,7 +8,7 @@ var favicon = require('underscore');
 //Create an 'express' object
 var app = express();
 //app.use(favicon(__dirname + '/public/media/favicon.ico'));
-app.use(favicon(__dirname + '//static/images/weSTEMfavicon.png'))
+app.use(favicon(__dirname + '/static/images/weSTEMfavicon.png'))
 //Set up the views directory
 app.set("views", __dirname + '/');
 //Set EJS as templating language WITH html as an extension
