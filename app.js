@@ -34,3 +34,15 @@ app.get("/", function(request, response){
 	};
 	response.render('index', dataForThePage);
 });
+
+app.get("/views/events", function(request, response){
+	response.render('views/events', {message: "Event Load did not work"});
+});
+
+app.get("/views/about", function(request, response){
+	response.render('views/about',{message: "About Load did not work"});
+});
+
+app.get("/views/programs", function(request, response){
+	response.render('views/programs',{message: "Views Load did not work"});
+});
