@@ -12,19 +12,19 @@ npm each time (if you don't run nodemon, you will have to restart npm each time 
 Once you are notified that it is running on the localhost, open your browser and type in localhost:8000 to pull up the website
 
 ## Main Pages:
-  *Home:  Index.html
-  *About: team info and pics
-  *Programs: programs information (speaker series, workshops, etc)
-  *Events: calendar of upcoming events
-  *Get Involved: subscribe to our newsletter, describe how people in and outside of NYUAD can get involved
-  *Resources: resources for other groups educating people about women in STEM (pics, stickers, posters, github workshop links, etc.)
+  * Home:  Index.html
+  * About: team info and pics
+  * Programs: programs information (speaker series, workshops, etc)
+  * Events: calendar of upcoming events
+  * Get Involved: subscribe to our newsletter, describe how people in and outside of NYUAD can get involved
+  * Resources: resources for other groups educating people about women in STEM (pics, stickers, posters, github workshop links, etc.)
   
 ## Programs Layout
-*Main Programs Page : Info about Speaker Series, Engineering workshops, and highschool workshops (programs that don't need a lot of information)
+* Main Programs Page : Info about Speaker Series, Engineering workshops, and highschool workshops (programs that don't need a lot of information)
 
-  *Sub-programs Pages:
-    *Career Development: different internship and research opportunities 
-    *Community: Resources for the NYUAD community specifically (community dinners and podcast episodes)
-    *High School Conference: All resources about the high school conference, photos, information, materials, etc
-    *Unbiasing: The background on the unbiasing campaign as well as the posters that we used, links to the gazelle articles written about it and some quotes from people that had responses to it
+  * Sub-programs Pages:
+    * Career Development: different internship and research opportunities 
+    * Community: Resources for the NYUAD community specifically (community dinners and podcast episodes)
+    * High School Conference: All resources about the high school conference, photos, information, materials, etc
+    * Unbiasing: The background on the unbiasing campaign as well as the posters that we used, links to the gazelle articles written about it and some quotes from people that had responses to it
   
