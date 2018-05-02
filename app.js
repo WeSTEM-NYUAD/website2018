@@ -28,6 +28,7 @@ var io = require('socket.io')(server);
 console.log('Express started on port ' + port);
 
 //ROUTES
+
 app.get("/", function(request, response){
 	var dataForThePage = {
 		message : "Try adding a forward slash plus a word to the url"
@@ -45,4 +46,16 @@ app.get("/views/about", function(request, response){
 
 app.get("/views/programs", function(request, response){
 	response.render('views/programs',{message: "Views Load did not work"});
+});
+
+app.get("/views/career-development", function(request, response){
+	response.render('views/career-development', {message: "Career Development Load did not work"});
+});
+
+app.get("/views/community", function(request, response){
+	response.render('views/community',{message: "Community Load did not work"});
+});
+
+app.get("/views/high-school-conference", function(request, response){
+	response.render('views/high-school-conference',{message: "HS Conference Load did not work"});
 });

@@ -16,8 +16,9 @@
     <link rel="icon" type="image/png" href="/static/images/weSTEMfavicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="../static/dist/jquery/jquery.min.js"></script>
+    <script src="../static/dist/semantic-ui/semantic.min.js"></script>
 
-    <script src="static/dist/jquery/jquery.min.js"></script>
   </head>
 
   <body>
@@ -55,7 +56,7 @@
       </div>
       <center><div class="ui medium images">
         <img src="../images/bio-poster.jpg" alt="">
-        <div class="ui modal poster1">
+        <div class="ui modal">
           <div class="image content">
             <div class="ui fluid image">
               <img src="../images/bio-poster.jpg" alt="">
@@ -104,7 +105,7 @@
          </div>
        </div>
      </div>
-   <script src="static/dist/semantic-ui/semantic.min.js"></script>
+
    <style type="text/css">
      .hidden.menu {
        display: none;
@@ -197,6 +198,7 @@
      $(document)
        .ready(function() {
          // fix menu when passed
+
          $('.masthead')
            .visibility({
              once: false,
@@ -213,6 +215,10 @@
          $('.ui.sidebar')
            .sidebar('attach events', '.toc.item')
          ;
+
+         $('.ui.modal')
+     		  .modal('show')
+     		 ;
        })
 
      ;

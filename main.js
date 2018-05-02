@@ -1,3 +1,7 @@
-$('.ui.modal')
-  .modal('behavior name', argumentOne, argumentTwo)
-;
+// $(document)
+// 	.ready(function() {
+// 		$('.ui.modal')
+// 		  .modal('show')
+// 		;
+//
+// 	})
