@@ -1,15 +1,20 @@
 # This website is the work of the weSTEM website development team.
 
 ##
-Before you begin, install node through terminal. You only have to do this once, so if you already have node/npm on your computer, you don't need to complete this step. 
+### Before you begin:
+Install node through terminal. You only have to do this once, so if you already have node/npm on your computer, you don't need to complete this step. 
 
-To install and begin building pull the files to update your local copy,
+### To install and begin building:
+Pull the files to update your local copy,
 In the terminal and within the directory that holds all of the files for this
 website, type "npm install", once everything is installed type "npm start app.js"
 or install nodemon and run "nodemon app.js" so that you don't have to restart
 npm each time (if you don't run nodemon, you will have to restart npm each time you make a change and want to see it).
 
 Once you are notified that it is running on the localhost, open your browser and type in localhost:8000 to pull up the website
+
+### To push to the heroku server:
+First make sure that the master branch is working and that heroku is installed. Then push using "git push heroku" or "git push heroku master"  and check the website to make sure the proper changes have been made!
 
 ## Main Pages:
   * Home:  Index.html
