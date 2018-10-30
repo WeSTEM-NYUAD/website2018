@@ -15,11 +15,6 @@
     <link rel="icon" type="image/png" href="/static/images/weSTEMfavicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <script src="static/dist/jquery/jquery.min.js"></script>
-    <script src="main.js"></script>
-    <script src="static/dist/semantic-ui/semantic.min.js"></script>
-
-
     <style>
           body, html {
           height: 100%;
@@ -50,23 +45,32 @@
     <div class="ui large top fixed hidden menu">
       <div class="ui container">
         <a href="index.html" class="active item">Home</a>
-        <div class="ui selection dropdown">
-          <input type="hidden" name="program">
-          <i class="dropdown icon"></i>
-          <div class="default text">Programs</div>
-          <div class="menu">
-            <div class="item">High School Conference</div>
-            <div class="item">Community</div>
-            <div class="item">Career Development</div>
+          <div class="ui selection dropdown">
+            <input type="hidden" name="program">
+            <i class="dropdown icon"></i>
+            <div class="default text">Programs</div>
+            <div class="menu">
+              <div class="item">High School Conference</div>
+              <div class="item">Community</div>
+              <div class="item">Career Development</div>
+            </div>
           </div>
-</div><a href="views/events.html" class="item">Events</a>
-<a href="views/about.html" class="item">About</a>
-<a href="views/getinvolved.html" class = "item">Get Involved</a>
+      <a href="views/events.html" class="item">Events</a>
+      <a href="views/about.html" class="item">About</a>
+      <a href="views/career-development.html" class="item">Career Development</a>
+      <a href="views/community.html" class="item">Community</a>
+      <a href="views/high-school-conference.html" class="item">Highschool Conference</a>
       </div>
     </div>
     <!--Sidebar Menu-->
     <div class="ui vertical inverted sidebar menu">
-      <a href="index.html" class="active item">Home</a><a href="views/programs.html" class="item">Programs</a><a href="views/events.html" class="item">Events</a><a href="about.html" class="item">About</a><a href="views/getinvolved.html" class = "item">Get Involved</a>
+      <a href="index.html" class="active item">Home</a>
+      <a href="views/programs.html" class="item">Programs</a>
+      <a href="views/events.html" class="item">Events</a>
+      <a href="about.html" class="item">About</a>
+      <a href="views/career-development.html" class="item">Career Development</a>
+      <a href="views/community.html" class="item">Community</a>
+      <a href="views/high-school-conference.html" class="item">Highschool Conference</a>
     </div>
     <!--Page Contents-->
     <div class="pusher">
@@ -74,8 +78,14 @@
         <div class="inverted vertical masthead center aligned segment">
           <div class="ui container">
             <div class="ui large secondary inverted pointing menu">
-              <a class="toc item"><i class="sidebar icon"></i></a><a href="index.html" class="active item">Home</a><a href="views/programs.html" class="item">Programs</a><a href="views/events.html" class="item">Events</a><a href="views/about.html" class="item">About</a>
-              <a href="views/getinvolved.html" class = "item">Get Involved</a>
+              <a class="toc item"><i class="sidebar icon"></i></a>
+              <a href="index.html" class="active item">Home</a>
+              <a href="views/programs.html" class="item">Programs</a>
+              <a href="views/events.html" class="item">Events</a>
+              <a href="views/about.html" class="item">About</a>
+              <a href="views/career-development.html" class="item">Career Development</a>
+              <a href="views/community.html" class="item">Community</a>
+              <a href="views/high-school-conference.html" class="item">Highschool Conference</a>
             </div>
           <div class="hero-text">
             <div class="ui text container">
@@ -225,6 +235,41 @@
         </div>
         <button type="submit" class="ui grey submit button" value="Send Form">Submit</button>
       </form>
+    </div>
+    </div>
+
+    <div class="ui vertical stripe segment">
+      <div class="ui text container">
+      <h3 class="ui header">
+        <center>
+        Subscribe
+      </center>
+      </h3>
+      <div class="ui attached message">
+        <div class="ui icon message">
+          <i class="inbox icon"></i>
+          <div class="content">
+            <div class="header">
+              Have you heard about our mailing list?
+            </div>
+            <p>Receive our newsletter about events and updates.</p>
+          </div>
+        </div>
+      </div>
+    <div id="mc_embed_signup">
+     <form action="https://facebook.us11.list-manage.com/subscribe/post" method="POST" class="ui form attached fluid segment">
+      <div class = "field">
+     <input type="hidden" name="u" value="cf0984e48ba82c44f89a08f06">
+     <input type="hidden" name="id" value="cb2f64cd2e">
+
+        <center><input type="email" value="" name="EMAIL" class="email" id="MERGE0" style="width:300px;" placeholder="myname@gmail.com" required></center>
+      </div>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px; margin: 30px;"><input type="text" name="b_9feab4a4165506089c00fc754_44e37cd77c" value=""></div>
+        <div class="clear"><center><input class="ui grey submit button" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" ></center></div>
+
+      </form>
+    </div>
     </div>
     </div>
 
