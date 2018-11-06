@@ -1,3 +1,10 @@
+## 2.4.0 - 20 Jun. 2018
+  * New Option:
+    * `useCalc` (default: `false`) to flip unit based `background-position` using `calc`. **Thanks @zoreet**
+
+## 2.3.0 - 9 Jun. 2018
+  * Skip processing CSS variables. **Thanks @danfooo**
+
 ## 2.2.1 - 9 Nov. 2017
   * Fixes a bug in flipping `background-position` having keywords only (Fixes [#107](https://github.com/MohammadYounes/rtlcss/issues/107)).
 

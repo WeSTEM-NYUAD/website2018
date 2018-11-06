@@ -176,6 +176,13 @@ module.exports = {
   },
   'processors': [
     {
+      'name': 'variable',
+      'expr': /^--/im,
+      'action': function (prop, value) {
+        return { 'prop': prop, 'value': value }
+      }
+    },
+    {
       'name': 'direction',
       'expr': /direction/im,
       'action': function (prop, value, context) {
@@ -408,11 +415,19 @@ module.exports = {
               ? '100%'
               : (parts[0].match(this.cache.percent)
                 ? context.util.complement(parts[0])
-                : context.util.swapLeftRight(parts[0]))
+                : (parts[0].match(this.cache.length)
+                  ? this.flipLength(parts[0], context)
+                  : context.util.swapLeftRight(parts[0])))
             state.value = state.value.replace(this.cache.match, function () { return parts.shift() })
           }
         }
         return util.restoreTokens(state)
+      },
+      'flipLength': function (value, context) {
+        if (context.config.useCalc) {
+          return 'calc(100% - ' + value + ')'
+        }
+        return context.util.swapLeftRight(value)
       },
       'update': function (context, value, name) {
         if (name.match(this.cache.gradient)) {
@@ -431,6 +446,7 @@ module.exports = {
             'match': context.util.regex(['position', 'percent', 'length', 'calc'], 'ig'),
             'percent': context.util.regex(['calc', 'percent'], 'i'),
             'position': context.util.regex(['position'], 'g'),
+            'length': context.util.regex(['length'], 'gi'),
             'gradient': /gradient$/i,
             'angle': /\d+(deg|g?rad|turn)/i,
             'url': /^url/i

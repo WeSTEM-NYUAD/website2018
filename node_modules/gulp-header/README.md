@@ -54,6 +54,19 @@ var fs = require('fs');
 gulp.src('./foo/*.js')
   .pipe(header(fs.readFileSync('header.txt', 'utf8'), { pkg : pkg } ))
   .pipe(gulp.dest('./dist/'))
+
+
+// for use with coffee-script
+return gulp.src([
+        'src/*.coffee',
+    ])
+    .pipe(header(banner, { pkg : pkg } ))
+    .pipe(sourcemaps.init()) // init sourcemaps *after* header
+    .pipe(coffee({
+        bare: true
+    }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('dist/js'))
 ```
 
 ## Issues and Alerts
