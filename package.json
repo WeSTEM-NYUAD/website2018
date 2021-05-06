@@ -21,6 +21,6 @@
     "serve-favicon": "^2.5.0",
     "socket.io": "^2.1.1",
     "typed.js": "^2.0.9",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   }
 }
